@@ -1,0 +1,6 @@
+{
+  "replace": false,
+  "values": [
+    "tacz-fabric:bullet", "tacz-fabric:bullet_ignore_armor"
+  ]
+}

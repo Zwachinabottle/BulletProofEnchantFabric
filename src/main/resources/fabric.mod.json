@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "bulletproofenchant",
+	"version": "${version}",
+	"name": "BulletProofEnchant",
+	"description": "Lowers Damage from TACZ guns",
+	"authors": [
+		"Zwachinabottle"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bulletproofenchant/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.zwachinabottle.bulletproofenchant.BulletProofEnchant"
+		],
+		"fabric-datagen": [
+			"net.zwachinabottle.bulletproofenchant.BulletProofEnchantDataGenerator"
+		]
+	},
+	"mixins": [
+		"bulletproofenchant.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
