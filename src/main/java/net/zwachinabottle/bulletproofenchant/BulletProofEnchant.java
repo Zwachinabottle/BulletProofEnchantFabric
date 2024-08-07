@@ -16,8 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class BulletProofEnchant implements ModInitializer {
-	public static final TagKey<DamageType> BULLET_DAMAGE = TagKey.of(RegistryKeys.DAMAGE_TYPE, Identifier.of("bulletproofenchant", "bullet_damage_types"));
-	public static final BulletProofEnchantment BULLET_PROOF = new BulletProofEnchantment(Enchantment.Rarity.COMMON, BULLET_DAMAGE, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET, EquipmentSlot.HEAD);
+	public static final BulletProofEnchantment BULLET_PROOF = new BulletProofEnchantment(Enchantment.Rarity.COMMON, BulletProofEnchantment.Type.BULLET_IGNORE_ARMOR, BulletProofEnchantment.Type.BULLET , EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET, EquipmentSlot.HEAD);
 
 
 
